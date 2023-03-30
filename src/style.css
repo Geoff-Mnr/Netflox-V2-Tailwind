@@ -1,0 +1,65 @@
+
+  /*animation section 1 TV*/
+  .animation_video_tv {
+    position: absolute;
+    width: 60%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .animation_netflox_tv img {
+    width: 80%;
+  }
+
+/*animation section 3 Imac*/
+  
+  .animation-imac {
+    position: absolute;
+    width: 49%;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .imac-video {
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .picture-imac {
+    width: 80%;
+    height: auto;
+  }
+
+
+/*animation croix dernière section*/
+.question_title_switch.active .line:nth-child(1) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  
+  .question_title_switch.active .line:nth-child(2) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
+
+  .line {
+    width: 60%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+  }
+  
+  .line:nth-child(1) {
+    top: 19px;
+    transform: rotate(90deg);
+  }
+  
+  .line:nth-child(2) {
+    top: 18px;
+  }
+ 
