@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflox | Profils</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../images/favicon_netflox.png" />
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="w-full h-auto md:h-screen font-['Montserrat'] text-white flex flex-col justify-center bg-gradient-to-b from-black via-gray to-black">
+        <h1 class="pt-8 md:pt-0 text-5xl font-bold flex justify-center">Qui est-ce ?</h1>
+        <!--Utilisation d'une liste pour les différents profils qui envoie vers main.html-->
+        <ul class="profile_selection flex justify-center flex-col md:flex-row items-center mt-28">
+            <li class="p-2"><a href="main.html" class="flex flex-col items-center "><img src="./src/img/chicken.png" alt="profil 1" class="w-3/4 border-transparent hover:-m-0.5 hover:border-light-gray hover:border-2" /><span>User 1</span></a></li>
+            <li class="p-2"><a href="main.html"class="flex flex-col items-center"><img src="./src/img/dog.png" alt="profil 2" class="w-3/4 border-transparent hover:-m-0.5  hover:border-light-gray hover:border-2"><span>User 2</span></a></li>
+            <li class="p-2"><a href="main.html"class="flex flex-col items-center"><img src="./src/img/hero.png" alt="profil 3" class="w-3/4 border-transparent hover:-m-0.5  hover:border-light-gray hover:border-2"/><span>User 3</span></a></li>
+            <li class="p-2"><a href="main.html"class="flex flex-col items-center"><img src="./src/img/monster.png" alt="profil" class="w-3/4 border-transparent hover:-m-0.5 hover:border-light-gray hover:border-2" /><span>User 4</span></a></li>
+        </ul>
+    </main>
+</body>
+
+</html>
