@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+    <link rel="icon" type="image/png" href="./../images/favicon_netflox.png" />
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css"/>
+    <title>Netflox</title>
+</head>
+
+<body class="w-full font-['Montserrat']">
+    <!--Page principale avec les différents films-->
+    <header id="Accueil" class="w-full">
+            <!--Header avec une navbar et une video (utilisation de js pour changer la couleur de la navbar au scroll )-->
+            <nav class="w-full bg-gray bg-opacity-20 p-4 flex items-center justify-between h-1/12 z-10 fixed">
+                    <!--Container pour avoir à gauche le logo et le menu-->
+                    <div class="menu w-1/4 flex justify-between items-center">
+                            <img src="./src/img/logo.png" alt="" class="header_main_img_logo w-28">
+                            <ul class="flex text-white text-base">
+                                    <li><a href="#Accueil" class="p-3 hover:font-semibold">Accueil</a></li>
+                                    <li><a href="#Séries" class="p-3 hover:font-semibold">Séries</a></li>
+                                    <li><a href="#Films" class="p-3 hover:font-semibold">Films</a></li>
+                                    <li><a href="#News" class="p-3 hover:font-semibold">Nouvautés</a></li>
+                            </ul>
+                    </div>
+                    <!--Container pour pour pouvoit placer l'image à droite dans la navbar-->
+                    <div class="profile">
+                            <img src="./src/img/hero.png" alt="profil" class="header_profil_img w-16">
+                    </div>
+
+            </nav>
+            <!--Video qui tourne en boucle-->
+            <video autoplay="" playsinline="" muted="" loop="" class="w-full relative z-0">
+                    <source src="./src/video/spider-man.mov" type="video/mp4">
+            </video>
+    </header>
+
+    <main class="w-full h-auto bg-black text-white flex flex-col items-center p-10">
+            <!--Utilisation d'un container pour mettre les 3 catégories de films et utilisation de flexbox-->
+            <div class="movies flex flex-col  w-full">
+                    <h1 id="News">Nouveautés</h1>
+                    <!--Liens avec les films img vers une page html-->
+                    <ul class="flex">
+                            <li class="pr-2"><a href="./src/img/movies/asterix_movie.html"> <img src="./src/img/movies/Asterix.webp"
+                                                    alt="film Astérix" class="rounded-sm" /></a></li>
+                            <li class="pr-2"><a href="series/lupin_series.html"><img src="./src/img/movies/Lupin.jpg"
+                                                    alt="série lupin" class="rounded-sm"/></a></li>
+                            <li class="pr-2"><a href="movies/murder-mystery-2_movie.html"><img
+                                                    src="./src/img/movies/murder-mystery2.jpg"
+                                                    alt="film Murder Mystery 2"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="movies/sos-fantomes_movie.html"><img
+                                                    src="./src/img/movies//SOS-fantome.webp"
+                                                    alt="film sos fantomes"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="./src/img/movies/jurassic-park_movie.html"><img
+                                                    src="./src/img/movies/Jurassic-park.webp"
+                                                    alt="film jurassic world"class="rounded-sm"></a></li>
+                            <li><a href="movies/venom_movie.html"><img src="./src/img/movies/Venom.webp"
+                                                    alt="film venom"class="rounded-sm"></a></li>
+                    </ul>
+            </div>
+            <div class="movies flex flex-col  w-full mt-6">
+                    <h1 id="Films">Films</h1>
+                    <ul class="flex">
+                            <li class="pr-2"><a href="movies/bumblebee_movie.html"><img src="./src/img/movies/bumblebee.webp"
+                                                    alt="film bumblebee"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="movies/copains-pour-toujours_movie.html"><img
+                                                    src="./src/img/movies/copain-pour-toujours.webp"
+                                                    alt="film copain pour toujours"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="movies/creed_movies.html"><img src="./src/img/movies/Creed.webp"
+                                                    alt="film creed"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="movies/john-wick_movie.html"><img src="./src/img/movies/John-wick.webp"
+                                                    alt="film john wick 3"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="movies/joker_movie.html"><img src="./src/img/movies/joker.webp"
+                                                    alt="film joker"class="rounded-sm"></a></li>
+                            <li><a href="movies/spider-man_movie.html"><img src="./src/img/movies/spider-man.webp"
+                                                    alt="film spider man"class="rounded-sm"></a></li>
+                    </ul>
+            </div>
+
+            <div class="movies flex flex-col  w-full mt-6">
+                    <h1 id="Séries">Séries</h1>
+                    <ul class="flex">
+                            <li class="pr-2"><a href="series/cobra-kai_series.html"><img src="./src/img/movies/cobra-kai.jpg"
+                                                    alt="série cobra kai"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="series/stranger-things_series.html"><img
+                                                    src="./src/img/movies/stanger-things.jpg"
+                                                    alt="série stranger things"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="series/the-office_series.html"><img src="./src/img/movies/The-office.webp"
+                                                    alt="série the office"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="series/big-bang-theory_series.html"><img
+                                                    src="./src/img/movies/Big-Bang-Theory.webp"
+                                                    alt="série big bang theory"class="rounded-sm"></a></li>
+                            <li class="pr-2"><a href="series/h_series.html"><img src="./src/img/movies/H.webp" alt="série h"class="rounded-sm"></a>
+                            </li>
+                            <li class="pr-2"><a href="series/arrested-developpement_series.html"><img
+                                                    src="./src/img/movies//Arrested-developement.jpg"
+                                                    alt="série arrested devloppement"class="rounded-sm"></a></li>
+                    </ul>
+            </div>
+
+    </main>
+    <footer class="w-full h-16 bg-gray flex items-center">
+        <span class="ml-2 text-light-gray">Netflox - Geoff Mnr - 2023</span>
+    </footer>
+</body>
+<!--lien vers script js pour le header-->
+<script src="./src/main_header.js"></script>
+
+</html>
